@@ -13,14 +13,7 @@ public class StudentDetail {
     private int id;
     private String college;
     private Double cgpa;
-
-//    public StudentDetail(){ }
-//    public StudentDetail(int cgpa, String college) {
-//        this.cgpa = cgpa;
-//        this.college = college;
-//    }
-//    @OneToOne(mappedBy = "studentDetail")
-//    private Student student;
+    
     public int getId() {
         return id;
     }
@@ -54,3 +47,4 @@ public class StudentDetail {
                 '}';
     }
 }
+
