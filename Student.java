@@ -22,14 +22,6 @@ public class Student {
     @JoinColumn(name = "student_detail_id")
     private StudentDetail studentDetail;
 
-//    public Student(){}
-//
-//    public Student(String firstName, String lastName, String email) {
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.email = email;
-//    }
-
     public int getId() {
         return id;
     }
@@ -80,3 +72,4 @@ public class Student {
                 '}';
     }
 }
+
