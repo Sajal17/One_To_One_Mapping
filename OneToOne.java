@@ -31,38 +31,38 @@ public class OneToOne {
 
         //Fetch by primary key
 
-       /* Student student=em.find(Student.class,1);
-        if(student !=null){
-            System.out.println("Student :"+student);
+        Student student1=em.find(Student.class,1);
+        if(student1 !=null){
+            System.out.println("Student :"+student1);
             System.out.println("StudentDetail :"+student.getStudentDetail());
         } else {
             System.out.println("Student not found");
-        } */
+        } 
 
         //Update
 
-      /*  Student student=em.find(Student.class,1);
-        if(student!=null){
-            StudentDetail sd=student.getStudentDetail();
-            sd.setCollege("IIT");
-            sd.setCgpa(8.5);
-            student.setLastName("Dey");
-            em.merge(student);
-            System.out.println("Updated StudentDetail: "+sd);
+       Student student3=em.find(Student.class,1);
+        if(student3!=null){
+            StudentDetail sd1=student3.getStudentDetail();
+            sd2.setCollege("IIT");
+            sd2.setCgpa(8.5);
+            student3.setLastName("Dey");
+            em.merge(student3);
+            System.out.println("Updated StudentDetail: "+sd2);
         }else {
             System.out.println("Student not found !");
-        } */
+        } 
 
 
         //Delete
 
-       /* Student student=em.find(Student.class,1);
-        if(student !=null){
-            em.remove(student);
+      Student student4=em.find(Student.class,1);
+        if(student4 !=null){
+            em.remove(student4);
             System.out.println("Deleted Student and linked StudentDetail");
         }else {
             System.out.println("Student not found..");
-        } */
+        } 
 
 
         em.getTransaction().commit();
@@ -72,3 +72,4 @@ public class OneToOne {
 
     }
 }
+
